@@ -1,14 +1,29 @@
-#root {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--white);
+  padding-top: 20px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--tomato);
+}
+
+.illustration-desktop {
+  background-image: url(../src/assets/images/illustration-sign-up-desktop.svg);
+}
+
+.my-btn {
+  background-color: var(--darkSlateGrey);
+}
+
+.my-btn:hover {
+  background-image: linear-gradient(to right, var(--pink), var(--tomato));
+}
+
+.updated-text {
+  font-size: 3.4rem;
+}
+
+.newsletter-container {
+  width: 928px;
 }

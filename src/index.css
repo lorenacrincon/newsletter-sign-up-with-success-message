@@ -11,6 +11,7 @@
 
   /*PRIMARY*/
   --tomato: hsl(4, 100%, 67%);
+  --pink: hsl(351, 100%, 67%);
   /*NEUTRAL*/
   --darkSlateGrey: hsl(234, 29%, 20%);
   --charcoalGrey: hsl(235, 18%, 26%);
@@ -21,4 +22,5 @@
 html,
 body {
   margin: 0;
+  width: 100%;
 }

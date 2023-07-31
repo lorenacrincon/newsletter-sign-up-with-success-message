@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      listStyleImage: {
+        checkmark: 'url("/src/assets/images/icon-success.svg")',
+      },
+    },
+    container: {
+      center: true,
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
