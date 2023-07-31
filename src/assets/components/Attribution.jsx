@@ -2,7 +2,7 @@ import React from "react";
 
 function Attribution() {
   return (
-    <div className="attribution">
+    <div className="attribution hidden lg:block">
       Challenge by{" "}
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor

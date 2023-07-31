@@ -18,12 +18,23 @@
 
 .my-btn:hover {
   background-image: linear-gradient(to right, var(--pink), var(--tomato));
+  box-shadow: 10px 10px 25px rgba(255, 99, 71, 0.5);
 }
 
 .updated-text {
-  font-size: 3.4rem;
+  font-size: 2.5rem;
 }
 
 .newsletter-container {
-  width: 928px;
+  width: 100%;
+  height: 842px;
+}
+
+@media (min-width: 1024px) {
+  .newsletter-container {
+    width: 928px;
+  }
+  .updated-text {
+    font-size: 3.4rem;
+  }
 }
