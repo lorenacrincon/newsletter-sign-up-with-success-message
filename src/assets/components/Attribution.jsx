@@ -7,7 +7,11 @@ function Attribution() {
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor
       </a>
-      . Coded by <a href="#">Lorena Rincón</a>.
+      . Coded by{" "}
+      <a href="https://github.com/lorenacrincon" target="_blank">
+        Lorena Rincón
+      </a>
+      .
     </div>
   );
 }

@@ -1,47 +1,11 @@
 import React, { useState } from "react";
 import iconList from "../images/icon-list.svg";
 import mobileIllustration from "../images/illustration-sign-up-mobile.svg";
+import ThankYou from "./ThankYou";
 
-function SignUp() {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleOnChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const regEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}$/;
-    if (regEx.test(email)) {
-      setIsSubmitted(true);
-    } else if (email === "") {
-      setMessage("Please enter email");
-    } else if (!regEx.test(email)) {
-      setMessage("Valid email required");
-    } else {
-      setMessage("");
-    }
-  };
-
+function SignUp({ handleSubmit, email, message, isSubmitted, handleOnChange }) {
   return isSubmitted ? (
-    <div className="container flex lg:justify-center lg:h-screen lg:items-center w-full">
-      <div className="flex flex-wrap thankyou-container bg-white lg:rounded-3xl pb-10 lg:p-16  lg:h-fit gap-6">
-        <img src={iconList} alt="Check Icon" className="w-14" />
-        <h1 className="updated-text font-bold leading-none">
-          Thanks for subscribing!
-        </h1>
-        <p>
-          A confirmation email has been sent to{" "}
-          <strong>ash@loremcompany.com.</strong> Please open it and click the
-          button inside to confirm your subscription.
-        </p>
-        <button className="rounded-lg my-btn p-4 mt-3 text-white font-bold text-base w-full">
-          Dismiss message
-        </button>
-      </div>
-    </div>
+    <ThankYou email={email} />
   ) : (
     <div className="container flex lg:justify-center lg:h-screen lg:items-center w-full">
       <div className="flex flex-wrap lg:flex-nowrap newsletter-container bg-white lg:rounded-3xl pb-10 lg:pe-6 lg:py-6 lg:h-fit ">
