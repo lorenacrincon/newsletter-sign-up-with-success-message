@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/lorenacrincon/newsletter-sign-up-with-success-message)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://lorenacrincon.github.io/newsletter-sign-up-with-success-message/)
 
 ## My process
 
@@ -132,4 +132,5 @@ function App() {
 ## Author
 
 - GitHub Profile - [Lorena Rincón](https://github.com/lorenacrincon)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/lorenacrincon)
+- Frontend Mentor - [@lorenacrincon](https://www.frontendmentor.io/profile/lorenacrincon)
+- Linkedin Profile - [Lorena Rincón](www.linkedin.com/in/lore-rincon)
