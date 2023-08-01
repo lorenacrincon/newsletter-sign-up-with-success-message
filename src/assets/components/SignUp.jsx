@@ -8,42 +8,30 @@ function SignUp({ handleSubmit, email, message, isSubmitted, handleOnChange }) {
     <ThankYou email={email} />
   ) : (
     <div className="container flex lg:justify-center lg:h-screen lg:items-center w-full">
-      <div className="flex flex-wrap lg:flex-nowrap newsletter-container bg-white lg:rounded-3xl pb-10 lg:pe-6 lg:py-6 lg:h-fit ">
+      <div className="flex flex-wrap lg:flex-nowrap newsletter-container bg-white lg:rounded-3xl pb-10 lg:pe-6 lg:py-8 lg:h-fit ">
         <img
           className="h-72 w-full object-cover lg:hidden"
           src={mobileIllustration}
           alt="Sign Up Illustration"
         />
-        <div className="flex-auto lg:w-7/12 px-6 lg:px-14 lg:py-14 grid gap-6 pt-8">
-          <h1 className="updated-text font-bold ">Stay Updated!</h1>
+        <div className="flex-auto lg:w-7/12 px-6 lg:px-14 lg:py-10 grid gap-6 ">
+          <h1 className="updated-text font-bold">Stay Updated!</h1>
           <p className="text-base">
             Join 60,000+ product managers receiving monthly updates on:
           </p>
           <div className="text-base">
             <ul className="grid gap-2">
               <li className="flex items-center">
-                <img
-                  src={iconList}
-                  alt="Checkmark Icon"
-                  className="w-4 h-4 mr-5"
-                />
+                <img src={iconList} alt="Checkmark Icon" className="mr-5" />
                 Product discovery and building what matters
               </li>
 
               <li className="flex items-center">
-                <img
-                  src={iconList}
-                  alt="Checkmark Icon"
-                  className="w-4 h-4 mr-5"
-                />
+                <img src={iconList} alt="Checkmark Icon" className="mr-5" />
                 Measuring to ensure updates are a success
               </li>
               <li className="flex items-center">
-                <img
-                  src={iconList}
-                  alt="Checkmark Icon"
-                  className="w-4 h-4 mr-5"
-                />
+                <img src={iconList} alt="Checkmark Icon" className="mr-5" />
                 And much more!
               </li>
             </ul>
@@ -65,11 +53,11 @@ function SignUp({ handleSubmit, email, message, isSubmitted, handleOnChange }) {
               className={`form-input my-2 block w-full rounded-lg p-4 ${
                 message
                   ? "border-orange-400 focus:ring-orange-400 focus:border-orange-400 bg-orange-50"
-                  : "focus:ring-gray-400 focus:border-gray-400"
+                  : "focus:ring-gray-500 focus:border-gray-500"
               }`}
               placeholder="john@example.com"
             />
-            <button className="rounded-lg my-btn p-4 mt-3 text-white font-bold text-base">
+            <button className="rounded-lg my-btn p-4 mt-3 text-white font-bold text-base w-full">
               Subscribe to monthly newsletter
             </button>
           </form>
