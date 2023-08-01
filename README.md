@@ -133,4 +133,4 @@ function App() {
 
 - GitHub Profile - [Lorena Rincón](https://github.com/lorenacrincon)
 - Frontend Mentor - [@lorenacrincon](https://www.frontendmentor.io/profile/lorenacrincon)
-- Linkedin Profile - [Lorena Rincón](www.linkedin.com/in/lore-rincon)
+- Linkedin Profile - [Lorena Rincón](https://www.linkedin.com/in/lore-rincon)
